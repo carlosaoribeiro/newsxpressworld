@@ -6,6 +6,7 @@ android {
     namespace = "com.carlosribeiro.newsxpressworld"
     compileSdk = 35
 
+
     defaultConfig {
         applicationId = "com.carlosribeiro.newsxpressworld"
         minSdk = 24
@@ -28,6 +29,7 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+
     }
 }
 
@@ -40,4 +42,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+    implementation (libs.glide)
+    annotationProcessor (libs.compiler)
+
 }
